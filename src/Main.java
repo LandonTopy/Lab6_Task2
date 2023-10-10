@@ -17,7 +17,7 @@ public class Main {
             System.out.println("Enter Current Number of Gallons of Gasoline in Vehicle:");
             if (scan.hasNextDouble()) {
                 gallons = scan.nextDouble();
-                scan.next();
+                scan.nextLine();
                 if (gallons >= 0){
                     done1 = true;
                 } else {
@@ -25,7 +25,7 @@ public class Main {
                 }
             } else {
                 System.out.println("The value you entered was incorrect. Please try again.");
-                scan.next();
+                scan.nextLine();
             }
         } while(!done1);
 
@@ -33,7 +33,7 @@ public class Main {
             System.out.println("Enter Fuel Efficiency in MPG:");
             if (scan.hasNextDouble()) {
                 mpg = scan.nextDouble();
-                scan.next();
+                scan.nextLine();
                 if (mpg > 0){
                     done2 = true;
                 } else {
@@ -41,7 +41,7 @@ public class Main {
                 }
             } else {
                 System.out.println("The value you entered was incorrect. Please try again.");
-                scan.next();
+                scan.nextLine();
             }
         } while(!done2);
         do{
@@ -49,7 +49,7 @@ public class Main {
             System.out.println("Enter Current Price for Gallon of Gas:");
             if (scan.hasNextDouble()) {
                 price = scan.nextDouble();
-                scan.next();
+                scan.nextLine();
                 if (price > 0){
                     done3 = true;
                 } else {
@@ -57,7 +57,7 @@ public class Main {
                 }
             } else {
                 System.out.println("The value you entered was incorrect. Please try again.");
-                scan.next();
+                scan.nextLine();
             }
         } while(!done3);
          cost100 = (100/mpg) * price;
